@@ -1,0 +1,43 @@
+{
+    "name": "Phaser 3",
+    "package": "Phaser3",
+    "index": "phaser3-docs/out/index.html",
+    "selectors": {
+        "h1.page-title": [
+            {
+                "requiretext": "^Namespace:",
+                "type": "Namespace",
+                "regexp": "^Namespace\\:\\s",
+                "replacement": "",
+                "matchpath": "phaser3-docs/out/(Phaser|Camera|Matter|Spine).*\\.html$"
+            },
+            {
+                "requiretext": "^Class:",
+                "type": "Class",
+                "regexp": "^Class\\:\\s",
+                "replacement": "",
+                "matchpath": "phaser3-docs/out/(Phaser|Camera|Matter|Spine).*\\.html$"
+            }
+        ],
+        "dl > dt.name > h4": {
+            "type": "Member",
+            "regexp": "(\\:.+)|(<[^>]*>)",
+            "replacement": "",
+            "matchpath": "phaser3-docs/out/(Phaser|Camera|Matter|Spine).*\\.html$"
+        },
+        "dl > dt > h4.name": {
+            "type": "Method",
+            "regexp": "\\(.*\\)|(<[^>]*>)",
+            "replacement": "",
+            "matchpath": "phaser3-docs/out/(Phaser|Camera|Matter|Spine).*\\.html$"
+        },
+        "h4[id^=\"event:\"]": {
+            "type": "Event",
+            "matchpath": "phaser3-docs/out/(Phaser|Camera|Matter|Spine).*\\.html$"
+        }
+    },
+    "ignore": [],
+    "icon32x32": "phaser3-docs/resources/docset-icon.png",
+    "allowJS": true,
+    "ExternalURL": "https://photonstorm.github.io/phaser3-docs/"
+}

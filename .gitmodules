@@ -1,0 +1,6 @@
+[submodule "phaser3-docs"]
+	path = phaser3-docs
+	url = https://github.com/photonstorm/phaser3-docs
+[submodule "phaser"]
+	path = phaser
+	url = https://github.com/photonstorm/phaser
