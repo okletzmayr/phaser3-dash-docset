@@ -1,5 +1,11 @@
 # [Phaser 3](https://www.phaser.io/) docs for [Dash](https://kapeli.com/dash)
 
+By [Oliver Kletzmayr](https://github.com/okletzmayr)
+
+## Generation:
+
+To generate the docset, clone
+[phaser3-dash-docset](https://github.com/okletzmayr/phaser3-dash-docset).
 
 Requirements:
 
@@ -17,4 +23,11 @@ of what it does:
 - runs dashing to generate the docset
 - gets the git tag from the `phaser` submodule
 - creates a `.tgz` in `./docset/versions/<version tag>/`
+
+Alternatively, if you prefer to do all of that yourself, and just run the
+dashing config:
+
+```shell
+dashing build --source ./phaser3-docs/out
+```
 
